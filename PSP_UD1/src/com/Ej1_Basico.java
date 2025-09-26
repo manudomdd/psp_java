@@ -10,6 +10,7 @@ public class Ej1_Basico {
 	 public static void main(String[] args) throws Exception {
 	       
 	        ProcessBuilder pb = new ProcessBuilder(Utils.sh(String.join(" ", args)));
+	        pb.inheritIO(); 
 	        Process p = pb.start();
 	        
 	        //InputStream flujoEntrada = p.getInputStream(); 
@@ -20,12 +21,17 @@ public class Ej1_Basico {
 	        //	System.out.println(line); 
 	        //}
 	        
-	        try (BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()))) {
-	            String line;
+	        /*
+	         * try (BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream())))
+	         * String line;
 	            while ((line = reader.readLine()) != null) {
 	                System.out.println(line);
 	            }
-	        }
+	         	}
+	         */
+	            
+	        
+	   
 	        
 	        int rc = p.waitFor();
 	        
