@@ -24,6 +24,7 @@ public class MenuComandos {
 			case 3: iniciarComando("lscpu"); 
 			case 4: iniciarComando("timedatectl status"); 
 			case 5: System.out.println("Programa finalizado."); 
+			default: System.out.println("Seleccione una opcion valida."); 
 			}
 		} while (option != 5); 
 	}
