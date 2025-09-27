@@ -5,19 +5,21 @@ import java.awt.*;
 
 public class ControlPanel extends JPanel {
     private static final long serialVersionUID = 1L;
-	public JButton btnRun, btnClear, btnExit;
+	public JButton btnRun, btnClear, btnExit, btnDate;
 
     public ControlPanel() {
         // grid con 3 filas (una por botón)
-        setLayout(new GridLayout(3, 1, 10, 10));
+        setLayout(new GridLayout(4, 1, 10, 10));
         setBorder(BorderFactory.createEmptyBorder(20, 10, 20, 10));
 
         btnRun   = new JButton("▶ Ejecutar");
         btnClear = new JButton("🧹 Limpiar");
+        btnDate = new JButton("Date"); 
         btnExit  = new JButton("🚪 Salir");
 
         add(btnRun);
         add(btnClear);
+        add(btnDate);
         add(btnExit);
     }
 }
