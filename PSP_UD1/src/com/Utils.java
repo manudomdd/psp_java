@@ -12,8 +12,4 @@ public class Utils {
 		return isWindows() ? Arrays.asList("cmd", "/c/", cmd)
 							: Arrays.asList("sh", "-c", cmd); 					
 	}
-	
-	
-	
-
 }

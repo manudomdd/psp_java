@@ -73,8 +73,8 @@ public class MenuComandos {
 
     private static void esperarEnter() {
         System.out.println("\nPresione ENTER para continuar...");
-        scanner.nextLine(); // Captura el salto pendiente de nextInt
-        scanner.nextLine(); // Espera ENTER
+        scanner.nextLine(); 
+        scanner.nextLine(); 
     }
 }
 
