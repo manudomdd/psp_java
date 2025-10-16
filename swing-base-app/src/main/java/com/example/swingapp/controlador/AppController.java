@@ -1,6 +1,9 @@
-package com.example.swingapp;
+package com.example.swingapp.controlador;
 
 import javax.swing.*;
+
+import com.example.swingapp.vista.ControlPanel;
+import com.example.swingapp.vista.OutputPanel;
 
 import java.awt.event.ActionEvent;
 

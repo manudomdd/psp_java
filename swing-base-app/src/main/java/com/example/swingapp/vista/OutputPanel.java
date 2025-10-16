@@ -1,10 +1,12 @@
-package com.example.swingapp;
+package com.example.swingapp.vista;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class OutputPanel extends JPanel {
-    JTextArea textArea;
+    private static final long serialVersionUID = 1L;
+    
+	JTextArea textArea;
 
     public OutputPanel() {
         setLayout(new BorderLayout());

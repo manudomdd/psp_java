@@ -1,10 +1,11 @@
-package com.example.swingapp;
+package com.example.swingapp.vista;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class ControlPanel extends JPanel {
-    JButton btnRun, btnClear, btnExit;
+    private static final long serialVersionUID = 1L;
+	public JButton btnRun, btnClear, btnExit;
 
     public ControlPanel() {
         // grid con 3 filas (una por botón)
